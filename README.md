@@ -120,4 +120,4 @@ Each project needs a unique `id`.
 
 ## Author
 
-[Your Name](https://github.com/[collinsosano6-droid])
+[Collins Osano](https://github.com/[collinsosano6-droid])
