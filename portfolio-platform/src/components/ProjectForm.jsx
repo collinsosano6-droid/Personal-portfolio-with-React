@@ -30,7 +30,8 @@ function ProjectForm({ onAdd }) {
   }
 
   return (
-    <form className="card" onSubmit={handleSubmit}>
+    // id="add-project" is the target of the "Add a Project" button in the hero
+    <form id="add-project" className="card" onSubmit={handleSubmit}>
       <h2>Add Project</h2>
 
       <label htmlFor="title">Title</label>
@@ -54,7 +55,9 @@ function ProjectForm({ onAdd }) {
         onChange={(e) => setImage(e.target.value)}
       />
 
-      <button type="submit">Add</button>
+      <button type="submit" className="btn btn-primary">
+        Add
+      </button>
     </form>
   );
 }

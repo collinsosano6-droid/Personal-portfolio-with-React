@@ -7,20 +7,21 @@ function Home({ projects, onAdd }) {
   // The search text lives here because only Home and its children need it
   const [search, setSearch] = useState("");
 
-  // Keep only the projects whose title contains the search text.
-  // toLowerCase() makes the search ignore capital letters.
+  // Keep only projects whose title contains the search text
   const visibleProjects = projects.filter((project) =>
     project.title.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <main className="container">
-      <ProjectForm onAdd={onAdd} />
-
-      <section className="card">
+      {/* id="projects" is the target of the "View My Work" button */}
+      <section id="projects">
+        <h2 className="section-title">Featured Projects</h2>
         <SearchBar value={search} onChange={setSearch} />
         <ProjectList projects={visibleProjects} />
       </section>
+
+      <ProjectForm onAdd={onAdd} />
     </main>
   );
 }
