@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React, { StrictMode } from "react";
+import ReactDOM from "react-dom/client";
+// BrowserRouter lets us have different "pages" without reloading the browser
+//import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./App.css";
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
