@@ -6,22 +6,22 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        {/* Column 1: about */}
+        
         <div>
           <h3>
-            Your<span>Name</span>
+            Collins<span>Osano</span>
           </h3>
           <p>
             Developer and designer creating clean, modern web experiences.
           </p>
         </div>
 
-        {/* Column 2: social links. EDIT the URLs */}
+    
         <div>
           <h4>Connect</h4>
           <ul>
             <li>
-              <a href="https://github.com/your-username" target="_blank" rel="noreferrer">
+              <a href="https://github.com/collinsosano6-droid" target="_blank" rel="noreferrer">
                 GitHub
               </a>
             </li>
@@ -33,12 +33,12 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 3: contact. EDIT your details */}
+    
         <div>
           <h4>Contact</h4>
           <ul>
             <li>
-              <a href="mailto:you@example.com">you@example.com</a>
+              <a href="mailto:you@example.com">collinsosano6@gmail.com</a>
             </li>
             <li>Nairobi, Kenya</li>
           </ul>
@@ -46,7 +46,7 @@ function Footer() {
       </div>
 
       <p className="copyright">
-        &copy; {year} Your Name. All rights reserved.
+        &copy; {year} Collins Osano. All rights reserved.
       </p>
     </footer>
   );
