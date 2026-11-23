@@ -1,0 +1,92 @@
+/* Make padding and borders count inside element widths */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/* Centers the page content and limits its width */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* White box used for the form, list and detail page */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Project list: ONE column on phones */
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.placeholder {
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* On screens 768px or wider, show TWO columns */
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
